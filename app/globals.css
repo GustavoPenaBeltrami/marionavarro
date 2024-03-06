@@ -2,32 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/*
+
+celeste: #31A6E0
+ladrillo: #A1532D
+claro: #CF6834
+crema: 
+verde: #BBC269
+verdeoscuro: #7A964C
+
+
+*/
+
+body{
+    background-color: #FBE3A7;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-cream {
+    background-color: #FBE3A7;
+    transition: all 0.3s !important;
+    transition-behavior: smooth;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.ladrillo{
+    color: #A1532D;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.text-green {
+    color: #7A964C;
+    transition: all 0.3s !important;
+    transition-behavior: smooth;
+}
+.text-lightgreen {
+    color: #BBC269;
+    transition: all 0.3s !important;
+    transition-behavior: smooth;
+}
+
+.text-cream {
+    color: #FBE3A7;
+    transition: all 0.5s !important;
+    transition-behavior: smooth;
+}
+
+.text-green-hover:hover {
+    color: #FBE3A7;
+    transition: all 0.3s !important;
+    transition-behavior: smooth;
+}
+.text-claro-hover:hover{
+    color: #BBC269;
+    transition: all 0.3s !important;
+    transition-behavior: smooth;
+}
+
+
+.main-button {
+    transition-behavior: smooth !important;
+    transition: all 0.5s !important;
+}
+
+.main-button:hover {
+    background-color: #FBE3A7;
+    scale: 1.1;
+    transition: all 0.5s !important;
+    transition-behavior: smooth;
+}
+
+
+.white-gradient {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+.image-bg {
+    background-image: url('/267.jpg');
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+}
+.congreso-bg {
+    background-image: url('/congreso.jpg');
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+}
+.inversor-image{
+    background-image: url('/2149535181.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.asd {
+    border: 2px solid red;
+}
+
+.borde-ladrillo{
+    border: 2px solid #A1532D;
 }
