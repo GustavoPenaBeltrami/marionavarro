@@ -1,10 +1,8 @@
 import { InvestmentSection } from "@/components/InvestmentSection";
-import Image from "next/image";
-
 export default function Inversiones() {
     return (
         <>
-            <div className="h-[3000px] bg-cream pt-40">
+            <div className="bg-cream pt-40">
                 <h1 className="text-4xl font-bold ladrillo text-center mb-20">Sea un inversor!</h1>
                 <p className="ladrillo text-2xl mb-20 w-11/12 max-w-[1300px] mx-auto">Te damos nuevas oportunidades en invertir en nanotecnologías, desarrollos integrales y valor agregado, para poder competir en otros paises con nuevas franquicias y oportunidades de trabajo y de innovación productiva. ¡SUMATE!</p>
                 <div className="lg:h-[600px] h-96 inversor-image overflow-hidden">

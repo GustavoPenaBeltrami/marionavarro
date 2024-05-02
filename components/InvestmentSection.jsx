@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const inversiones = [
   {
@@ -73,6 +74,9 @@ export const InvestmentSection = () => {
             >
               {inversion.desc}
             </p>
+            {inversion.titulo === "Campos con desarrollo de invernadero" ? (
+              <Link href="/inversiones/campos-con-desarrollo-de-invernadero" className="flex text-2xl font-semibold w-fit mt-20 mx-auto bg-cream py-4 px-8 rounded-xl ladrillo opacity-80 hover:opacity-100 hover:scale-105">MÁS INFORMACIÓN</Link>
+            ) : null}
           </div>
           {inversion.par ? null : (
             <Image

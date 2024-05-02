@@ -107,6 +107,17 @@ export const Header = () => {
                   : ""
               }`}
             >
+              <Link href="/noticias">noticias</Link>
+            </li>
+            <li
+              className={`inline-block mx-5 transition-all duration-500 ${
+                navAtTop[3]
+              } ${
+                pathname === "/congresos"
+                  ? "text-cream text-claro-hover"
+                  : ""
+              }`}
+            >
               <Link href="/congresos">Congresos</Link>
             </li>
             <li

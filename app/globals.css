@@ -29,6 +29,13 @@ body{
     color: #A1532D;
 }
 
+.bg-ladrillo{
+    background-color: #A1532D;
+    transition: all 0.3s !important;
+    transition-behavior: smooth;
+
+}
+
 .text-green {
     color: #7A964C;
     transition: all 0.3s !important;

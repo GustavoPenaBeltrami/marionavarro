@@ -1,9 +1,11 @@
 import { Background } from "@/components/Background";
+import { RealtimeWeather } from "@/components/RealtimeWeather";
 import { Swipper } from "@/components/Swipper";
 import Link from "next/link";
 export default function Home() {
   return (
     <>
+      <RealtimeWeather />
       <div className="bg-cream">
         <Background />
         <div id="next-section" className="pt-52 pb-20">
@@ -27,6 +29,8 @@ export default function Home() {
           <p className="ladrillo text-2xl mt-20 w-11/12 max-w-[1300px] mx-auto"> Es decir, la necesidad a nivel mundial, de fabicacion de alimentos con sistema tecnológico para el desarrollo del mercado mundial. Por lo que podemos darle una solución mas integral desde el comienzo del proceso de inversión, hasta el resultado final del producto a exportacion.</p>
           <Link href="/inversiones" className="flex text-2xl font-semibold w-fit mt-20 mx-auto bg-green-900 py-4 px-8 rounded-xl text-cream hover:scale-105">MÁS INVERSIONES</Link>
         </div>
+
+
       </div>
 
     </>);
